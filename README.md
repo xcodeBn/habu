@@ -3,3 +3,7 @@ Habu is a simple ecommerce app for a store where the user can create an account 
 
 An admin or the shop owner in that case  can also use the app to add/delete/edit different products and check  the customers orders.
 This app was created using Android Studio, Java , PHP , and MySql.
+
+Make sure to edit the link in Strings to whatever host address your using for the php files .
+
+Feel free to ask any questions.
