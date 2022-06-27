@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/whiteTextColor"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+
+            android:id="@+id/salesImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/client"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/salesImageView">
+
+            <TextView
+                style="@style/reportContentText"
+                android:text="Name:"
+                android:textColor="#25C0DE"/>
+            <TextView
+                android:id="@+id/tvcash"
+                style="@style/viewParent.headerText"
+                android:textSize="21sp"
+                android:text="$1000.22"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/l"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#25C0DE"
+            android:text="Email:"
+            android:layout_below="@id/salesImageView"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/l"
+            android:id="@+id/id"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="adasdasdawdwawdawdwad"
+            android:layout_below="@id/salesImageView"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

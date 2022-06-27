@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" tools:context=".EditPro">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include layout="@layout/toolbar_back_logout"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="100dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="10dp"
+                    android:src="@color/darkbordo"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@id/ibname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvname"
+                    android:text="productname"
+                    android:textAlignment="viewStart"/>
+
+                <ImageButton
+
+                    android:id="@+id/ibname"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:focusable="true"
+                    android:clickable="true"
+
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkbordo"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentStart="true"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Weight:"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+
+                        android:id="@+id/tvweight"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Size:"
+                        android:layout_alignParentEnd="false"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/ibweight"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:focusable="true"
+                    android:clickable="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkbordo"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentStart="true"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Size:"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:id="@+id/tvsize"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Size:"
+                        android:layout_alignParentEnd="false"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/ibsize"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:focusable="true"
+                    android:clickable="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentStart="true"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Stock:"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:id="@+id/tvstock"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Size:"
+                        android:layout_alignParentEnd="false"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/ibstock"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:focusable="true"
+                    android:clickable="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentStart="true"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Price:"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:id="@+id/tvprice"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="Size:"
+                        android:layout_alignParentEnd="false"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/ibprice"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:focusable="true"
+                    android:clickable="true"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="delete product"
+                    android:id="@+id/dltbtn"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:textSize="20dp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/image_placeholder"
+                    android:id="@+id/fabimage"
+                    android:tooltipText="change Image"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl"
+
+                android:layout_marginTop="20dp"
+
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload image"
+                    android:textSize="20dp"
+                    android:id="@+id/changeiv"/>
+
+                <Button
+                android:layout_below="@id/changeiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textSize="20dp"
+                    android:id="@+id/cancel"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

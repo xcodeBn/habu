@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "574665310895",
+    "project_id": "habuonlineshop",
+    "storage_bucket": "habuonlineshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574665310895:android:041ef73c7094e757840a5a",
+        "android_client_info": {
+          "package_name": "com.example.habuonlineshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574665310895-ensjsm7rp3of4iqcrupe989ps08f515f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtbrn1jtvDfpYHvyqpZ37ljC0EjopB-zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574665310895-ensjsm7rp3of4iqcrupe989ps08f515f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

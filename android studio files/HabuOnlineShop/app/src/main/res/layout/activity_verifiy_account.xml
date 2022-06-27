@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifiyAccount"
+    android:id="@+id/parent">
+
+    <include layout="@layout/usertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/verifymain_toolbar"
+        ></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize"
+        android:orientation="vertical"
+       android:layout_centerInParent="true" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="30dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please verify your email address to continues"
+                android:textAlignment="center"
+                android:textSize="21dp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp">
+
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vf">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Verification"
+                    android:textSize="20dp"
+                    android:id="@+id/btn"/>
+                <include layout="@layout/viewflipper_loading"/>
+                <com.alimuzaffar.lib.pin.PinEntryEditText
+                    android:id="@+id/verify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@color/bordo"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textIsSelectable="false"
+                    android:textSize="20sp"
+
+                    app:pinAnimationType="popIn"
+
+
+
+
+                    app:pinTextBottomPadding="10dp"
+                    app:pinLineStroke="4dp"
+                    app:pinLineStrokeSelected="4dp"
+
+                    app:pinBackgroundIsSquare="false"
+                    app:pinLineColors="@color/bordo"
+                    android:layoutDirection="ltr"
+
+
+
+
+
+                    />
+            </ViewFlipper>
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

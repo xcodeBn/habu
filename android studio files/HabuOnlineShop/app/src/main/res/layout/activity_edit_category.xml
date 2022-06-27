@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditCategory">
+
+    <include layout="@layout/toolbar_back_logout"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cativ"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_edit_24"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/catname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Name"
+                android:textAlignment="center"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="15dp"
+            android:background="@color/bordo"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/namefab"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_alternate_email_24"
+                android:layout_centerInParent="true"
+                android:focusable="true"
+                android:backgroundTint="@color/yello"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change\nname"
+                android:textAlignment="center"
+                android:layout_below="@+id/namefab"
+                android:layout_centerHorizontal="true"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/imagefab"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="40dp"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_image_24"
+                android:layout_alignParentStart="true"
+                android:focusable="true"
+                android:backgroundTint="@color/cyann"
+                />
+
+
+
+            <TextView
+
+                android:layout_marginLeft="40dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change\nimage"
+                android:textAlignment="center"
+                android:layout_below="@+id/imagefab"
+                android:layout_centerHorizontal="false"
+                android:layout_alignParentStart="true"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/deletefab"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_image_24"
+                android:layout_alignParentEnd="true"
+                android:focusable="true"
+                android:backgroundTint="@color/red"
+                />
+
+            <TextView
+
+                android:layout_marginEnd="49dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textAlignment="center"
+                android:layout_below="@+id/deletefab"
+                android:layout_marginRight="40dp"
+                android:layout_centerHorizontal="false"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:visibility="gone"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/upload"
+                android:text="Confirm your Image"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:visibility="gone"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel"
+                android:text="Cancel"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

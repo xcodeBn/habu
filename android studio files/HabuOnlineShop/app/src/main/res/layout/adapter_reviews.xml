@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="1dp"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    app:cardElevation="4dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:clipToPadding="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/client"
+                android:layout_alignParentStart="true"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black"
+
+                android:layout_alignParentRight="true"
+                android:text="UserName"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:theme="@style/producttv"
+                android:textAlignment="textStart"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Very Good"
+                android:textAlignment="textStart"
+                android:textSize="20dp"
+                android:textColor="@color/bordo"
+                android:textStyle="bold"
+
+                android:id="@+id/title"
+                android:layout_alignParentStart="true"
+                />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:layout_alignParentEnd="true"
+                android:isIndicator="true"
+
+                style="?android:attr/ratingBarStyleIndicator"
+                android:id="@+id/rate"
+                android:rating="1"
+                android:stepSize="1"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:clipToPadding="true"
+           android:layout_margin="10dp"
+
+
+           >
+
+           <TextView
+               android:id="@+id/body"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textAlignment="textStart"
+               android:text="Lorem Abolsum test ba adasd asd a dasdada dasd asd asdada d adadadasd adadsasdawd awd awd awdawd awdawd awd awd dwada"
+               />
+
+       </RelativeLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

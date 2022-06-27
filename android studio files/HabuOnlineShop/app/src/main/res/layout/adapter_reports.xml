@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/whiteTextColor"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/card"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/comment_background"
+    android:stateListAnimator="@animator/comment_selection"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+
+            android:id="@+id/salesImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/client"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/salesImageView">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/reportContentText"
+                android:text="Name:"
+                android:textColor="#25C0DE"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/viewParent.headerText"
+                    android:textSize="21sp"
+                    android:text="title"/>
+
+                <TextView
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/date"
+                    android:layout_toRightOf="@id/title"
+                    android:textSize="15sp"
+                    android:text="date"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="details"
+            android:id="@+id/details"
+            android:layout_below="@id/salesImageView"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/details"
+            android:text="click to expand"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textSize="10dp"
+            />
+
+        <ImageButton
+
+            android:layout_marginTop="10dp"
+
+            android:tint="@color/bordo"
+            android:id="@+id/btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/details"
+            android:layout_below="@+id/details"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:background="@color/transperent"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

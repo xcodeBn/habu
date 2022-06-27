@@ -1,0 +1,102 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Habuonlineshop" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bordo</item>
+        <item name="colorPrimaryVariant">@color/lightbordo</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/bordo</item>
+        <item name="colorSecondaryVariant">@color/bordo</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="myAlertStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/bordo</item>
+
+
+
+    </style>
+    <!--styles for sales app-->
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@color/contentTextColor</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="reportsCardStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">140dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="reportContentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_below">@id/dateTextView</item>
+    </style>
+
+    <!--    Login input style-->
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/bordo</item>
+        <item name="android:textColorHint">@color/bordo</item>
+        <item name="color">@color/bordo</item>
+
+
+
+        <item name="android:textSize">15sp</item>
+        <item name="colorControlNormal">#F13333</item>
+        <item name="colorControlActivated">#F13333</item>
+        <item name="colorControlHighlight">@color/red</item>
+        <item name="android:background">@color/transperent</item>
+        <item name="android:textColorHighlight">@color/transperent</item>
+        <item name="android:textColorLink">@color/black</item>
+        <item name="errorTextColor">@color/red</item>
+        <item name="roundingBorderColor">@color/red</item>
+    </style>
+    <style name="textviewstyle">
+
+        <item name="android:typeface">monospace</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+
+
+    </style>
+
+    <style name="producttv">
+
+
+        <item name="android:typeface">monospace</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">16dp</item>
+
+
+    </style>
+
+    <style name="welcomescreenbuttonstyle" parent="TextAppearance.AppCompat.Button">
+
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+
+    <style name="Loading" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/bordo</item>
+    </style>
+
+
+</resources>

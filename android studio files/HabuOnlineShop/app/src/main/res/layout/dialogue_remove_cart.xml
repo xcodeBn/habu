@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="13dp"
+    android:padding="10dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove from cart?"
+
+            android:textColor="@color/bordo"
+
+            android:textSize="15dp"
+            android:id="@+id/areyousure_tv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            ></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoutyes_tv"
+            android:text="yes"
+
+            android:textStyle="normal"
+            android:layout_below="@id/areyousure_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/bordo"
+            android:layout_marginBottom="20dp"
+            android:textSize="13dp"
+            ></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoutnos_tv"
+            android:text="no"
+
+            android:layout_toLeftOf="@id/logoutyes_tv"
+            android:textSize="13dp"
+            android:textColor="@color/bordo"
+            android:textStyle="normal"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/areyousure_tv"></TextView>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

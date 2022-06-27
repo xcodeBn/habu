@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+
+    tools:context=".Customer_ViewProductActivity">
+<include layout="@layout/toolbar_back_logout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+    <RelativeLayout
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+<com.facebook.shimmer.ShimmerFrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shimmer_duration="800">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvholder_viewproducts_customer"
+        />
+</com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swiperefresh_viewproduct_customer">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_viewproducts_customer"/>
+
+
+
+
+
+        </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewflipper_products"
+            android:visibility="gone">
+
+            <include layout="@layout/error_layout"/>
+            <include layout="@layout/nothingtoseehere_layout"/>
+
+
+
+        </ViewFlipper>
+    </RelativeLayout>
+</RelativeLayout>

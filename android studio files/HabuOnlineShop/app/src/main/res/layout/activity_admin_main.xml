@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMainActivity"
+    android:background="@color/white">
+
+    <include layout="@layout/usertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customermain_toolbar"
+        ></include>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/customermain_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+
+        ></androidx.viewpager2.widget.ViewPager2>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="bottom"
+        android:id="@+id/customermain_bottomappbar"
+        android:backgroundTint="@color/transperent"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:id="@+id/customermain_tabs"
+        android:layout_gravity="bottom"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicator="@drawable/tab_shape_indicator"
+        app:layout_anchor="@id/customermain_bottomappbar"
+        android:layout_height="?actionBarSize"
+        app:tabSelectedTextColor="@color/bordo"
+        app:tabPaddingBottom="10dp"
+        android:backgroundTint="@color/transperent"
+
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_home_24"/>
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/searchvector"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_event_note_24"
+
+            android:tooltipText="Cart"
+            />
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/accountvector"
+            />
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

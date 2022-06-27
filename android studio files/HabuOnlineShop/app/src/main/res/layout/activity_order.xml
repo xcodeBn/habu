@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderActivity"
+    android:id="@+id/parent">
+
+    <include layout="@layout/toolbar_back_logout"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:textColor="@color/darkbordo"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:theme="@style/textviewstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Details"
+                    android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="26"
+
+                    android:hint="Province"
+                    style="@style/TextLabel"
+
+                    android:theme="@style/TextLabel"
+
+
+                    app:boxBackgroundColor="@color/bordo"
+                    app:counterOverflowTextColor="@color/red"
+
+                    app:counterTextColor="@color/bordo"
+
+
+
+
+                    app:suffixTextColor="@color/bordo"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/transperent"
+
+
+                        android:inputType="text"
+                        android:id="@+id/province"
+
+                        android:maxLength="26"
+                        android:lines="1"
+
+
+
+
+                        />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="26"
+                    android:hint="City"
+                    style="@style/TextLabel"
+
+                    android:theme="@style/TextLabel"
+
+
+                    app:boxBackgroundColor="@color/bordo"
+                    app:counterOverflowTextColor="@color/red"
+
+                    app:counterTextColor="@color/bordo"
+
+
+
+
+                    app:suffixTextColor="@color/bordo"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="26"
+                        android:background="@color/transperent"
+
+
+                        android:inputType="text"
+                        android:id="@+id/city"
+
+                        android:lines="1"
+
+
+
+
+                        />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="26"
+                    android:hint="Street"
+                    style="@style/TextLabel"
+
+                    android:theme="@style/TextLabel"
+
+
+                    app:boxBackgroundColor="@color/bordo"
+                    app:counterOverflowTextColor="@color/red"
+
+                    app:counterTextColor="@color/bordo"
+
+
+
+
+                    app:suffixTextColor="@color/bordo"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/transperent"
+
+                        android:maxLength="26"
+                        android:inputType="text"
+                        android:id="@+id/street"
+
+                        android:lines="1"
+
+
+
+
+                        />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+
+                android:layout_margin="10dp"
+                android:background="@color/bordo"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total price:"
+                    android:textColor="@color/darkbordo"
+                    android:textSize="20dp"
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11$"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="20dp"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/price"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vf">
+
+                    <Button
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order Now"
+                        android:id="@+id/order"
+                        />
+
+                    <include layout="@layout/viewflipper_loading"/>
+                </ViewFlipper>
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

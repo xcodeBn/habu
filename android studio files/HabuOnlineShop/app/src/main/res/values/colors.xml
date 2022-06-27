@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#000</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="cyann">#00807E</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transperent">@android:color/transparent</color>
+    <color name="bordo">#BF0096</color>
+    <color name="transbordo">#40BF0096</color>
+    <color name="darkbordo">#77004F</color>
+    <color name="red">#FF1100</color>
+    <color name="pink">#FF008D</color>
+    <color name="lightgray">#ededed</color>
+    <color name="lightbordo">#EC13BD</color>
+    <color name="bordo_light">#0DBF0096</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="darkgreen">#008E0F</color>
+    <color name="darkred">#B8002F</color>
+    <color name="puregreen">#00DD2F</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="tsts">#00FFA6</color>
+
+</resources>

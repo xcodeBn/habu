@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="30dp"
+
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="5dp">
+
+            <View
+                android:id="@+id/category_icon_customerhomerecyclerholder"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/placeholder_square"
+                android:contentDescription="TODO" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/category_title"
+            android:layout_width="110dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/place_holder_tube"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

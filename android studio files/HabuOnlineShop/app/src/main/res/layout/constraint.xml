@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/categoryiv"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/categoryname"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="Category"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            app:layout_constraintBottom_toTopOf="@+id/namefab"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryiv" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier_bottom_action_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="categoryname"
+            tools:layout_editor_absoluteY="206dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidlineverticalstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="36dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidlineverticalend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="357dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/namefab"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="44dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_alternate_email_24"
+            app:layout_constraintStart_toStartOf="@+id/guidlineverticalstart"
+            app:layout_constraintTop_toBottomOf="@+id/categoryname" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/imagefab"
+            android:layout_width="80dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/cyann"
+
+
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_image_24"
+            app:layout_constraintEnd_toStartOf="@+id/deletefab"
+            app:layout_constraintHorizontal_bias="0.802"
+            app:layout_constraintStart_toEndOf="@+id/namefab"
+            app:layout_constraintTop_toBottomOf="@+id/categoryname" />
+
+        <TextView
+            android:id="@+id/changenametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change\nName"
+            android:textAlignment="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/changeimagetv"
+            app:layout_constraintEnd_toEndOf="@+id/namefab"
+            app:layout_constraintStart_toStartOf="@+id/namefab" />
+
+        <TextView
+            android:id="@+id/changeimagetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Change\nImage"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/imagefab"
+            app:layout_constraintStart_toStartOf="@+id/imagefab"
+            app:layout_constraintTop_toBottomOf="@+id/imagefab" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/deletefab"
+
+            android:layout_width="56dp"
+
+
+            android:layout_height="56dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/red"
+            android:clickable="true"
+            android:elevation="6dp"
+            android:focusable="true"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            app:layout_constraintEnd_toStartOf="@+id/guidlineverticalend"
+            app:layout_constraintTop_toBottomOf="@+id/categoryname"
+            tools:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <TextView
+            android:id="@+id/deletetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Delete"
+            app:layout_constraintEnd_toEndOf="@+id/deletefab"
+            app:layout_constraintStart_toStartOf="@+id/deletefab"
+            app:layout_constraintTop_toBottomOf="@+id/deletefab" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

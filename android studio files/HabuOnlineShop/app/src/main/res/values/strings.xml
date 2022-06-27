@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Habu</string>
+    <string name="localhost">http://10.0.2.2/userfiles/Habu-OnlineShop/</string>
+    <string name="dblink">http://10.0.2.2/userfiles/Habu-OnlineShop/</string>
+    <string name="signupphp">signup.php</string>
+    <string name="loginphp">login.php</string>
+    <string name="securitykey">aicnaicbiecnaon12421312312xsadmaoiwjidoaj141242oakmsclncejoS1212311dijaoWJIdjSDJWIDJSKC1231231OEJAIDNIADNSJNCJENCE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="getcategoryimage">images/categoryimage/</string>
+    <string name="getcategory">getcategory.php</string>
+    <string name="changecatimage">changecatimage.php</string>
+    <string name="changecatname">changecatname.php</string>
+    <string name="deletecat">deletecat.php</string>
+    <string name="getproducts">getproductfromcategory.php</string>
+    <string name="getproductimage">images/productimages/</string>
+    <string name="searchproducts">searchproducts.php</string>
+    <string name="changepassword">changepassword.php</string>
+    <string name="report">reports.php</string>
+    <string name="getcustomer">getcustomer.php</string>
+    <string name="reviews">getreviews.php</string>
+    <string name="addreview">addreview.php</string>
+    <string name="checkcart">checkcart.php</string>
+    <string name="addtocart">addtocart.php</string>
+    <string name="removefromcart">removefromcart.php</string>
+    <string name="makeorder">order.php</string>
+    <string name="viewcart">getcart.php</string>
+    <string name="addcategory">addcategory.php</string>
+    <string name="getcartproduct">getcartproduct.php</string>
+    <string name="getorders">getorders.php</string>
+    <string name="verifyemail">verifyemail.php</string>
+    <string name="emailverified">emailverified.php</string>
+    <string name="getallproducts">getallprodycts.php</string>
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="searchprocat">searchprocat.php</string>
+    <string name="updateproimg">changeproimage.php</string>
+    <string name="changeproname">changeproname.php</string>
+    <string name="changeprostock">changeprostock.php</string>
+
+    <string name="changeprosize">changeprosize.php</string>
+    <string name="changeproweight">changeproweight.php</string>
+
+    <string name="changeproprice">changeproprice.php</string>
+    <string name="deleteproduct">deleteproduct.php</string>
+    <string name="addproduct">addnewproduct.php</string>
+    <string name="sumprice">sumprice.php</string>
+    <string name="itemsold">itemsold.php</string>
+    <string name="sales">sales.php</string>
+    <string name="getusers">getusers.php</string>
+    <string name="getreports">getreports.php</string>
+    <string name="deletereport">deletereport.php</string>
+    <string name="adminchangepass">adminchangepass.php</string>
+    <string name="advancedcart">cartadvanced.php</string>
+    <string name="addnotification">addnotification.php</string>
+
+</resources>

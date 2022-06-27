@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    android:elevation="5dp"
+
+
+
+
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardview_cat_customer_adapter"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transperent"
+        >
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:paddingTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_home_24"
+            android:id="@+id/circularimageview_category_customer_adapter"
+            android:layout_marginTop="10dp"
+
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circularimageview_category_customer_adapter"
+            android:text="Category"
+            android:theme="@style/textviewstyle"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tv_customercategoryadapter"
+            android:shadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
+            android:textAlignment="center"
+            />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

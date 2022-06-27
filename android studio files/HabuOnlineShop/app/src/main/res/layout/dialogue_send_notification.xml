@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="270"
+                android:hint="Title..."
+                style="@style/TextLabel"
+
+                android:outlineSpotShadowColor="@color/bordo"
+                android:outlineAmbientShadowColor="@color/bordo"
+
+                app:boxBackgroundColor="@color/bordo"
+                app:counterOverflowTextColor="@color/red"
+
+                app:counterTextColor="@color/bordo"
+
+                app:boxStrokeColor="@color/bordo"
+
+                app:suffixTextColor="@color/bordo"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/transperent"
+
+                    android:inputType="textMultiLine"
+                    android:id="@+id/title"
+
+                    android:lines="1"
+
+
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="270"
+                android:hint="Body..."
+                style="@style/TextLabel"
+
+                android:outlineSpotShadowColor="@color/bordo"
+                android:outlineAmbientShadowColor="@color/bordo"
+
+                app:boxBackgroundColor="@color/bordo"
+                app:counterOverflowTextColor="@color/red"
+
+                app:counterTextColor="@color/bordo"
+
+                app:boxStrokeColor="@color/bordo"
+
+                app:suffixTextColor="@color/bordo"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/transperent"
+
+                    android:inputType="textMultiLine"
+                    android:id="@+id/body"
+
+                    android:lines="7"
+
+
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vf">
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Now"
+                    android:textSize="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"/>
+
+
+                <include layout="@layout/viewflipper_loading"/>
+
+            </ViewFlipper>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportCustomer"
+    android:orientation="vertical"
+    android:id="@+id/reportlay">
+
+
+    <include layout="@layout/toolbar_back_logout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/subjectlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                app:counterEnabled="true"
+
+                app:counterMaxLength="30"
+
+                style="@style/TextLabel"
+
+                app:passwordToggleTint="@color/bordo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subject"
+                    android:layout_below="@+id/email_EditText"
+                    android:hint="Problem Subject"
+                    android:background="@color/transperent"
+                    android:inputType="textEmailSubject"
+
+                    android:lines="1"
+                    android:maxLength="30"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bodylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:scrollbars="vertical"
+
+                app:counterEnabled="true"
+
+                app:counterMaxLength="270"
+                style="@style/TextLabel"
+
+                app:passwordToggleTint="@color/bordo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/body"
+                    android:layout_below="@+id/email_EditText"
+                    android:hint="Problem Details"
+                    android:background="@color/transperent"
+                    android:inputType="textMultiLine"
+
+
+
+                    android:lines="8"
+                    android:maxLength="270"
+                    />
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vfreport">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textSize="20dp"
+                    android:theme="@style/textviewstyle"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/submitbtn"
+                    />
+
+                <include layout="@layout/viewflipper_loading"
+                    />
+
+            </ViewFlipper>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

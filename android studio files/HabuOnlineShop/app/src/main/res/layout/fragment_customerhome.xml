@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="?actionBarSize"
+    android:background="@color/transperent"
+    xmlns:shimmer="http://schemas.android.com/tools">
+
+
+
+
+<com.facebook.shimmer.ShimmerFrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shimmer_duration="800"
+    android:id="@+id/custmerfragmentshrimmerframelayout">
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recyclerviewcategoryholder_customerhomefragment"
+android:clipToPadding="false"
+android:padding="5dp"/>
+
+</com.facebook.shimmer.ShimmerFrameLayout>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:id="@+id/swiperefresh_customerhome_fragment"
+>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclercategory_customerhome_fragment"
+        android:clipToPadding="false"
+        android:padding="5dp"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <ViewFlipper
+
+        android:id="@+id/vf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+        <include layout="@layout/error_layout" />
+
+
+
+    </ViewFlipper>
+
+
+</RelativeLayout>
